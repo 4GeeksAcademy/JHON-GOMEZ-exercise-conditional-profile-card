@@ -7,7 +7,7 @@ import "../style/index.css";
     {
         includeCover: true, // if includeCover is true the algorithm should show the cover image
         background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
-        avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
+        avatarURL: "./public/assets/img/foto Jhon G.jpg" // this is the url for the profile avatar
         socialMediaPosition: "right", // social media bar position (left or right)
         
         twitter: null, // social media usernames
@@ -32,7 +32,7 @@ function render(variables = {}) {
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
-          <img src="${variables.avatarURL}" class="photo" />
+          <img src="public/assets/foto Jhon G.jpg" class="photo" />
           <h1>${variables.name == null ? "Jhon" : variables.name} ${
     variables.lastName == null ? "Gomez" : variables.lastName
   }</h1>
@@ -40,9 +40,9 @@ function render(variables = {}) {
           <h3>${variables.city == null ? "Bogota" : variables.city},
           ${variables.country == null ? "Colombia" : variables.country}</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
+            
+            <li><a href="https://github.com/Neo1917"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/school/jhon-gomez-16460395"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/@riosjhon839"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
